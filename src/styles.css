@@ -1,1 +1,94 @@
-/* You can add global styles to this file, and also import other style files */
+
+/* Basic reset */
+body, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .nav-link:hover {
+    background-color: #444;
+  }
+  
+  .active-link {
+    background-color: #007bff;
+  }
+  
+  /* Main content styling */
+  .main-content {
+    padding: 20px;
+    background-color: #f0f2f5;
+    min-height: calc(100vh - 60px); /* Adjusting for navbar height */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .nav-list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-item {
+      margin-bottom: 10px;
+    }
+  
+    .nav-item:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  /* Logout button specific styling */
+  .logout-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #444;
+  }
+  
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import url("/node_modules/@ngneat/hot-toast/src/styles/styles.css");

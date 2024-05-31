@@ -1,0 +1,43 @@
+<div> 
+  <button class="add-party-btn" (click)="addParty()">Add party</button>
+  <hr>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Company Name</th>
+        <th>Mobile No</th>
+        <th>Email</th>
+        <th>Bank Names</th>
+        <th>Addresses</th>
+        <th>Username</th>
+        <th>Actions</th> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let party of parties">
+        <td>{{ party.id }}</td>
+        <td>{{ party.name }}</td>
+        <td>{{ party.company_name }}</td>
+        <td>{{ party.mobile_no }}</td>
+        <td>{{ party.email }}</td>
+        <td>
+          <ul>
+            <li *ngFor="let bank of party.bank_id">{{ bank.bank_name }}</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li *ngFor="let address of party.address">{{ address.address_line_1 }} {{ address.address_line_2 }}</li>
+          </ul>
+        </td>
+        <td>{{ party.userid.username }}</td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,23 @@
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 200px;
+  padding: 0 8px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.mat-expansion-panel {
+  margin-bottom: 16px;
+}
+
+button {
+  margin-top: 16px;
+}

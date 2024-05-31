@@ -1,0 +1,9 @@
+{
+    "/api": {
+      "target": "https://ap.greatfuturetechno.com",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    }
+  }
+  
